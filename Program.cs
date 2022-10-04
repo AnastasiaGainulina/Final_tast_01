@@ -18,4 +18,15 @@ void Get3SymbolString(string[] arrayFirst, string[] arraySecond)
         }
     }
 }
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]} ");
+    }
+    Console.WriteLine();
+}
+
 Get3SymbolString(arrayFirst, arraySecond);
+PrintArray(arraySecond);
+
