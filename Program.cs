@@ -6,3 +6,16 @@
 
 string[] arrayFirst = new string[4] {"hello", "2", "world", ":-)"};
 string[] arraySecond = new string[arrayFirst.Length];
+void Get3SymbolString(string[] arrayFirst, string[] arraySecond)
+{
+    int count = 0;
+    for (int i = 0; i < arrayFirst.Length; i++)
+    {
+    if(arrayFirst[i].Length <= 3)
+        {
+        arraySecond[count] = arrayFirst[i];
+        count++;
+        }
+    }
+}
+Get3SymbolString(arrayFirst, arraySecond);
